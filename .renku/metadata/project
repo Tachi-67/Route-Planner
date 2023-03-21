@@ -1,0 +1,33 @@
+{
+  "@renku_data_type": "renku.domain_model.project.Project",
+  "@renku_oid": "project",
+  "agent_version": "1.11.2",
+  "annotations": [],
+  "automated_update": true,
+  "creator": {
+    "@renku_data_type": "renku.domain_model.provenance.agent.Person",
+    "@renku_data_value": {
+      "affiliation": null,
+      "alternate_name": null,
+      "email": "eric.bouillet@epfl.ch",
+      "id": "mailto:eric.bouillet@epfl.ch",
+      "name": "Eric Pierre Bouillet"
+    }
+  },
+  "date_created": {
+    "@renku_data_type": "datetime.datetime",
+    "@renku_data_value": "2023-03-21T23:18:26+00:00"
+  },
+  "description": "",
+  "id": "/projects/root/final-project",
+  "immutable_template_files": [],
+  "keywords": [],
+  "minimum_renku_version": "1.7.0",
+  "name": "final-project",
+  "template_id": "python-minimal",
+  "template_metadata": "{\"__template_source__\": \"https://github.com/SwissDataScienceCenter/renku-project-template\", \"__template_ref__\": \"0.4.1\", \"__template_id__\": \"python-minimal\", \"__namespace__\": \"root\", \"__repository__\": \"https://dslab-gitlab.epfl.ch\", \"__sanitized_project_name__\": \"final-project\", \"__project_slug__\": \"root/final-project\", \"__project_description__\": \"\", \"__renku_version__\": \"1.11.2\", \"name\": \"final-project\", \"__name__\": \"final-project\", \"__template_version__\": \"a3fecfa9b347613f013782075bb17734f20688bb\", \"__automated_update__\": true}",
+  "template_ref": "0.4.1",
+  "template_source": "https://github.com/SwissDataScienceCenter/renku-project-template",
+  "template_version": "a3fecfa9b347613f013782075bb17734f20688bb",
+  "version": 9
+}
