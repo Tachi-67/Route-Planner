@@ -1,7 +1,31 @@
 name: "base"
 channels:
   - defaults
-# dependencies:
+  - conda-forge
 # - add packages here
 # - one per line
+dependencies:
+  - bash_kernel
+  - happybase
+  - hdfs3
+  - ipywidgets
+  - jupytext
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - plotly
+  - pyarrow
+  - pykafka
+  - requests-kerberos
+  - seaborn
+  - scikit-learn
+  - voila
+  - pip:
+      - hdijupyterutils
+      - geopandas
+      - pyhive[hive]
+      - pyspark
+      - sparkmagic
 prefix: "/opt/conda"
+
