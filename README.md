@@ -1,6 +1,9 @@
 # Final Assignment: Robust Journey Planning
 
-**Executive summary:** build a robust SBB journey planner for the Zürich area, and make a short video presentation of it - to be done in **groups of 5 or 6**, before **May 30, 23:59**.
+**Executive summary:** build a robust SBB journey planner for the Zürich area, and make a short video presentation of it, to be done in **groups of 5 or 6**.
+
+* Video presentations are due before **May 29th, 23:59**
+* Code due before **May 30, 23:59**.
 
 ----
 ## Content
@@ -257,7 +260,7 @@ Figure 1. better illustrates the above concepts relating stops, routes, trips an
              The horizontal axis represents the time of day on a non-linear scale. Solid lines connecting the stops correspond to trips.
              A trip is one instances of a vehicle journey on the route. Trips on same route do not need
              to mark all the stops on the route, resulting in trips having different stop lists for the same route.
-             
+
 
 #### Stations data
 
