@@ -15,10 +15,10 @@ dependencies:
   - pandas
   - pip
   - plotly
-  - pyarrow
   - pykafka
   - requests-kerberos
   - seaborn
+  - jupyter-server-proxy
   - scikit-learn
   - voila
   - pip:
