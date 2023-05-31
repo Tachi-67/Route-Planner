@@ -1,9 +1,3 @@
-import pandas as pd
-output = pd.read_csv('output.csv').drop(columns=['Unnamed: 0'])
-name_mapping = {'stop_id1':'from', 'stop_id2': 'to', 'transport_type':'transport','index':'trip_id', 
-                'departure_time':'departure'}
-output = output.rename(columns=name_mapping)
-
 # +
 import pandas as pd
 import plotly.graph_objects as go
@@ -34,18 +28,7 @@ class ColorWidget(widgets.Widget):
         
 
 # Example data for demonstration
-df = pd.DataFrame({
-    'trip_id': [10, 200, 200],
-    'departure': ['11h', '11:30h', '12h'],
-    'transport': ['bus', 'walk', 'plane'],
-    'confidence': [89.0, 94.0, 94.0], 
-    'from': ['Zurich Airport', 'Zurich Airport', 'Zurich Old Town'],
-    'lat1': [47.450199, 47.450199, 47.372127],
-    'lon1': [8.563171, 8.563171, 8.542319],
-    'to': ['Zurich Lake', 'Zurich Old Town', 'Zurich Lake'],
-    'lat2': [47.366856, 47.372127, 47.366856],
-    'lon2': [8.544755, 8.542319, 8.544755]
-})
+df = pd.read_csv('trips.csv')
 
 # Unique trip_ids
 trip_ids = df['trip_id'].unique()
@@ -194,3 +177,6 @@ display(container)
 selected_trip_id = options[0]  # Example: change to the desired trip_id
 change = {'new': selected_trip_id}
 update_route_overview(change)
+# -
+
+
