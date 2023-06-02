@@ -161,23 +161,7 @@ def k_shortest_paths(G, source, target, k, weight):
 
 # +
 
-def find_stops(stops):
-    hdfs = HDFileSystem(host='hdfs://iccluster044.iccluster.epfl.ch', port=8020, user='ebouille')
-    files = hdfs.glob('/user/{0}/{1}/*.parquet'.format('sperry','stop_times'))
-    df = pd.DataFrame()
-    for file in files:
-        with hdfs.open(file) as f:
-            parquet_f = pq.ParquetFile(f)
-            for i, batch in enumerate(parquet_f.iter_batches(batch_size=65536)):
-                batch_df =  batch.to_pandas()
-                #batch_df.arrival_time =  pd.to_datetime(batch_df.arrival_time,errors=‘ignore’)
-                batch_df = batch_df[batch_df.stop_id.isin(stops)]
-                df =  pd.concat([df,batch_df])
-    return df
-
-def calculate_connections(trans, stops_df, route_ids, nodes, arrival_time):
-    stops_df.arrival_time =  pd.to_datetime(stops_df.arrival_time,errors='ignore')
-    stops_arrival =  stops_df[(stops_df.arrival_time<arrival_time)]
+def calculate_connections(trans, route_ids, nodes, arrival_time):
     latest_arrivals = []
 
     #Keep track of the arrival time and when different routes are taken

@@ -29,7 +29,13 @@
 ----
 ## HOW-TO
 
-This section intentionally blank. Students must complete it with instructions on how to use the code in their project.
+In `main.ipynb` run the cells up to and including the UI. In the UI, you can select the departure and destination as well as the arrival time. The stop names must be exact or it won't work, and the arrival time must be in the HH:MM format. For the information to be registered properly, you will need to click a few times beside the boxes.
+
+After running the UI the rest of the cells can be run one sequentially. This will calculate the possible trips and save them in the `trips.csv` file. Once the `trips.csv` file has been generated, open the Vizualization notebook (`vizualization.py`) and run the cell. This will display all the possible trips.
+
+### Limitations
+ - Stop names must be exact
+ - The trips might have low probabilities of being on time due to historical data. To fix this, we could go back and calculate alternate paths, however, due to lack of time this wasn't possible
 
 ----
 ## Important Dates
