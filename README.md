@@ -1,6 +1,3 @@
-# Notice:
-This is the final project of [EPFL COM-490 Large-scale data science for real-world data](https://edu.epfl.ch/coursebook/en/large-scale-data-science-for-real-world-data-COM-490)
-
 The code is supposed to be ran on the [Renku Platform](https://dslab-renku.epfl.ch/projects/group-aa/final-project)
 
 # Final Assignment: Robust Journey Planning
